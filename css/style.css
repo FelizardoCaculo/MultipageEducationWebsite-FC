@@ -504,7 +504,7 @@ footer ul li a:hover{
         }
 
     }
-
+        
     .nav__menu li a{
         background: var(--color-primary);
         box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
@@ -516,6 +516,63 @@ footer ul li a:hover{
     .nav__menu li a:hover{
         background: var(--color-bg2);
         color: var(--color-white);
+    }
+
+
+    /*========== HEADER SECTION Styles ============*/
+    header{
+        height: 52vh;
+        margin-bottom: 4rem;
+    }
+
+    .header__container{
+        gap: 0;
+        padding-bottom: 3rem;
+    }
+
+    /*========== CATEGORIES SECTION Styles ============*/
+
+    .categories{
+        height: auto;
+    }
+
+    .categories__container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .categories__left{
+        margin-right: 0;
+    }
+
+
+    /*========== POPULAR COURSES SECTION Styles ============*/
+
+    .courses{
+        margin-top: 0;
+    }
+
+    .courses__container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+    /*========== FAQs SECTION Styles ============*/
+
+    .faqs__container{
+        grid-template-columns: 1fr;
+    }
+
+    .faq{
+        padding: 1.5rem;
+    }
+
+
+    /*========== FOOTER SECTION Styles ============*/
+
+    .footer__container{
+        grid-template-columns: 1fr 1fr;
     }
 
 
