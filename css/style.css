@@ -116,6 +116,7 @@ nav{
 /*Change navbar on scroll using JavaScript*/
 .window-scroll{
     background: var(--color-primary);
+    /*👇 👇👇0=>x side, 1rem=> y side 2rem for the blur. rgba=>0.5 50% of transparency 👇👇👇*/
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
@@ -166,7 +167,7 @@ header{
 }
 
 .header__left p{
-    margin: 1rem 0 2.4rem;
+    margin: 1rem 0 2.4rem; /*1.2=>Top 0=>Left/right 2=>Bottom*/
 }
 
 
@@ -210,6 +211,7 @@ header{
 }
 
 .category:hover{
+    /*👇 👇👇0=>x side, 3rem=> y side 3rem for the blur. rgba=>0.5 30% of transparency 👇👇👇*/
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
@@ -238,10 +240,89 @@ header{
 }
 
 .category h5{
-    margin: 2rem 0 1rem;
+    margin: 2rem 0 1rem; /*1.2=>Top 0=>Left/right 2=>Bottom*/
 }
 
 .category p{
     font-size: 0.85rem;
 }
 
+
+
+
+/*========== COURSES SECTION Styles ============*/
+
+.courses{
+    margin-top: 10rem;
+}
+
+.courses__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.course{
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.course:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.course__info{
+    padding: 2rem;
+}
+
+.course__info p{
+    margin: 1.2rem 0 2rem; /*1.2=>Top 0=>Left/right 2=>Bottom*/
+    font-size: 0.9rem;
+}
+
+
+
+/*========== FAQs Styles ============*/
+
+.faqs{
+    background: var(--color-bg1);
+    /*👇 👇👇0=>x side, 0=> y side 3rem for the blur. rgba=>0.5 50% of transparency 👇👇👇*/
+    box-shadow: insert 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.faqs__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.faq{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--color-primary);
+    cursor: pointer;
+}
+
+.faq h4{
+    font-size: 1rem;
+    line-height: 2.3;
+}
+
+.faq__icon{
+    align-self: flex-start; /*Align the icon in the begining of the box content*/
+    font-size: 1.2rem;
+}
+
+.faq p{
+    margin-top: 0.8rem;
+    display: none; /*To hide the answers*/
+}
+
+.faq.open p{
+    display: block; /*injected by JavaSCript to show the answer*/
+}
