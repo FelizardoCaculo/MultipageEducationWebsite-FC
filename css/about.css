@@ -1,0 +1,45 @@
+/*=============== ACHIVEMENTS ==============*/
+.about__achivements{
+    margin-top: 3rem;
+}
+.about__achivements-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+.about__achivements-right > p{
+    margin: 1.6rem 0 2.5rem; 
+}
+.achivements__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.achivement__card{
+    background: var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.achivement__card:hover{
+    background: var(--color-bg2);
+    box-shadow: 0 3rem rgba(0, 0, 0, 0.3);
+}
+.achivement__icon{
+    background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.achivement__card:nth-child(2) .achivement__icon{
+    background: var(--color-success);
+}
+.achivement__card:nth-child(3) .achivement__icon{
+    background: var(--color-primary);
+}
+.achivement__card p{
+    margin-top: 1rem;
+}

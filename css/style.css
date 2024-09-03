@@ -22,7 +22,7 @@
     --color-bg2: #424890;
 
     --container-width-lg: 80%;
-    --container-width-md: 90%;
+    --container-width-md: 95%;
     --container-width-sm: 98%;
 
     --transition: all 400ms ease;
@@ -36,6 +36,7 @@ body{
 .container{
     width: var(--container-width-lg);
     margin: auto;
+    padding: 1rem;
 }
 section{
     padding: 6rem;
@@ -166,7 +167,7 @@ header{
 }
 .category{
     background: var(--color-bg2);
-    padding: 2rem;
+    padding: 0.9rem;
     border-radius: 2rem;
     transition: var(--transition);
 }
@@ -218,7 +219,7 @@ header{
     border-color: var(--color-primary);
 }
 .course__info{
-    padding: 2rem;
+    padding: .9rem;
 }
 .course__info p{
     margin: 1.2rem 0 2rem; /*1.2=>Top 0=>Left/right 2=>Bottom*/
@@ -334,7 +335,7 @@ footer ul li a:hover{
     border-top: 1px solid var(--color-bg2);
 }
 /*===================== MEDIA QUERIES (TABLETS) Styles ====================*/
-@media screen and (max-width:               px){
+@media screen and (max-width: 1024px){
     /*========== General Styles ============*/
     .container{
         width: var(--container-width-md)
@@ -476,7 +477,7 @@ footer ul li a:hover{
     }
 }
 /*========== MEDIA QUERIES (SMARTPHONES) Styles ============*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     .container{
         width: var(--container-width-sm);
     }    
