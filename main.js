@@ -12,10 +12,10 @@ faqs.forEach(faq => {
         if(icon.className === 'uil uil-plus'){
             icon.className = 'uil uil-minus';
         } else{
-            icon.className = 'uil uil-plus      '
+            icon.className = 'uil uil-plus';
         }
-    })
-})
+    });
+});
 //show/hide nav menu
 const menu = document.querySelector('.nav__menu');
 const menuBtn = document.querySelector('#open-menu-btn');
@@ -30,5 +30,5 @@ const closeNav = () => {
     menu.style.display = 'none';
     closeBtn.style.display = 'none';
     menuBtn.style.display = 'inline-block';
-}
-closeBtn.addEventListener('click', closeNav)
+}       
+closeBtn.addEventListener('click', closeNav);
