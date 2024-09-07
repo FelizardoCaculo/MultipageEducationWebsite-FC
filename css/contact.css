@@ -4,17 +4,18 @@
   display: grid;
   grid-template-columns: 40% 60%;
   gap: 4rem;
-  height: 30rem;
-  margin: 7rem auto;
+  height: 33rem;
+  margin: 10rem auto 5rem;
   border-radius: 1rem;
 }
 /*========== ASIDE Styles ============*/
 .contact__aside {
   background: var(--color-primary);
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 1rem;
   position: relative;
   bottom: 10rem;
+  margin-block: 2rem;
 }
 .aside__image {
   width: 12rem;
@@ -73,4 +74,42 @@ input, textarea{
     width: max-content;
     margin-top: 1rem;
     cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .contact{
+    top: 0;
+  }
+  .contact__container{
+    gap: 1.5rem;
+    margin-top: 4rem;
+    height: auto;
+    padding: 1.5rem;
+  }
+  .contact__aside{
+    width: auto;
+    padding: .5rem;
+    bottom: 0;
+    margin-block: 0;
+  }
+  .contact__form{
+    align-self: center;
+    padding: 1.5rem;
+    bottom: 0;
+  }
+}
+/*========== MEDIA QUERIES (SMARTPHONES) Styles ============*/
+@media screen and (max-width: 600px) {
+  .contact__container{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 0;
+  }
+  .contact__form{
+    margin: 0 1.5rem 3rem;
+  }.form__name{
+    flex-direction: column;
+  }
+  .form__name input[type="text"] {
+    width: 100%;
+  }
 }
