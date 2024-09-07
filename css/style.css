@@ -149,6 +149,7 @@ header {
 .categories {
   background: var(--color-bg1);
   height: 32rem;
+  padding: 1rem;
 }
 .categories h1 {
   line-height: 1;
@@ -157,6 +158,7 @@ header {
 .categories__container {
   display: grid;
   grid-template-columns: 40% 60%; /*Divided in 2 blocks as shown in values percentage*/
+  padding: 1rem;
 }
 .categories__left {
   margin-right: 4rem;
@@ -238,9 +240,10 @@ header {
 .faqs__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 1rem;
 }
 .faq {
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   gap: 1.4rem;
@@ -344,23 +347,18 @@ footer ul li a:hover {
   .container {
     width: var(--container-width-md);
   }
-
   h1 {
     font-size: 2rem;
   }
-
   h2 {
     font-size: 1.7rem;
   }
-
   h3 {
     font-size: 1.4rem;
   }
-
   h4 {
     font-size: 1.2rem;
   }
-
   /*========== NAVBAR Styles ============*/
   nav button {
     display: inline-block;
@@ -369,11 +367,9 @@ footer ul li a:hover {
     color: var(--color-white);
     cursor: pointer;
   }
-
   nav button#close-menu-btn {
     display: none; /*To hyde the close btn*/
   }
-
   .nav__menu {
     position: fixed;
     top: 5rem;
@@ -384,14 +380,12 @@ footer ul li a:hover {
     gap: 0;
     display: none;
   }
-
   .nav__menu li {
     width: 100%;
     height: 5.8rem;
     animation: animateNavItems 400ms linear forwards; /*Calling the animation bellow*/
     transform-origin: top right; /*To start the animation from the side indicated*/
   }
-
   /*Creating animation delay of milisecondsfor list items*/
   .nav__menu li:nth-child(1) {
     animation-delay: 200ms;
@@ -405,7 +399,6 @@ footer ul li a:hover {
   .nav__menu li:nth-child(4) {
     animation-delay: 800ms;
   }
-
   @keyframes animateNavItems {
     /*Creating animations for navbar*/
     0% {
@@ -416,7 +409,6 @@ footer ul li a:hover {
       opacity: 1;
     }
   }
-
   .nav__menu li a {
     background: var(--color-primary);
     box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
@@ -429,51 +421,40 @@ footer ul li a:hover {
     background: var(--color-bg2);
     color: var(--color-white);
   }
-
   /*========== HEADER SECTION Styles ============*/
   header {
     height: 52vh;
     margin-bottom: 4rem;
   }
-
   .header__container {
     gap: 0;
     padding-bottom: 3rem;
   }
-
   /*========== CATEGORIES SECTION Styles ============*/
   .categories {
     height: auto;
   }
-
   .categories__container {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-
   .categories__left {
     margin-right: 0;
   }
-
   /*========== POPULAR COURSES SECTION Styles ============*/
   .courses {
     margin-top: 0;
   }
-
   .courses__container {
     grid-template-columns: 1fr 1fr;
   }
-
   /*========== FAQs SECTION Styles ============*/
-
   .faqs__container {
     grid-template-columns: 1fr;
   }
-
   .faq {
     padding: 1.5rem;
   }
-
   /*========== FOOTER SECTION Styles ============*/
   .footer__container {
     grid-template-columns: 1fr 1fr;
@@ -501,9 +482,17 @@ footer ul li a:hover {
     margin-bottom: 1.3rem;
   }
   /*========== CATEGORIES SECTION Styles ============*/
+  .categories__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    width: 100%;
+    margin: 0 auto;
+  }
   .categories__right {
     grid-template-columns: 1fr 1fr;
     gap: 0.7rem;
+    width: 100%;
+    margin: 0 auto;
   }
   .category {
     padding: 1rem;
@@ -516,6 +505,8 @@ footer ul li a:hover {
   /*========== POPULAR COURSES SECTION Styles ============*/
   .courses__container {
     grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
   }
   /*========== TESTIMONIAL SECTION Styles ============*/
   .testimonial__body {
@@ -532,5 +523,19 @@ footer ul li a:hover {
   }
   .footer__socials {
     justify-content: center;
+  }
+}
+/*========== MEDIA QUERIES (SMARTPHONES) Styles ============*/
+@media screen and (max-width: 600px) {
+  .categories__right {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  .courses {
+    padding: 1rem;
+  }
+  .faqs {
+    padding: 1rem;
   }
 }
