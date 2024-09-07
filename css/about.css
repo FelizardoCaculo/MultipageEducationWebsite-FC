@@ -1,6 +1,7 @@
 /*=============== ACHIVEMENTS ==============*/
 .about__achivements{
     margin-top: 3rem;
+
 }
 .about__achivements-container{
     display: grid;
@@ -105,7 +106,7 @@
     }
     .team__container{
         grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
+        gap: 1rem;
     }
     .team__member{
         padding: 1rem;
@@ -113,15 +114,27 @@
 }
 /*===================== MEDIA QUERIES (SMARTPHONE) Styles ====================*/
 @media screen and (max-width: 600px){
+    .about__achivements{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        margin: 0 auto;
+
+    }
     .achivements__cards{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .team{
+        padding: 2rem;
     }
     .team__container{
-        grid-template-columns: 1fr 1fr;
-        gap: 0.7rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: 100%;
     }
     .team__member{
         padding: 0;
+        width: 100%;
     }
     .team__member p{
         margin-bottom: 1.5rem;
