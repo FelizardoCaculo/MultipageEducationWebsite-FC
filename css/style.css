@@ -266,7 +266,7 @@ header {
 .faq.open p {
   display: block; /*injected by JavaSCript to show the answer*/
   background: var(--color-bg1);
-  padding: 0.5rem;  
+  padding: 0.5rem;
 }
 /*========== TESTIMONIAL SECTION Styles ============*/
 .testimonials__container {
