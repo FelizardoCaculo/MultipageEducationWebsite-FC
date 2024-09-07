@@ -1,533 +1,536 @@
 /*========== General Styles ============*/
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline:0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
-:root{
-    --color-primary: #6c63ff;
-    --color-success: #00bf8e;
-    --color-warning: #f7c94b;
-    --color-danger: #f75842;
-    --color-danger-variant: rgba(247, 88, 66, 0.4);
-    --color-white: #fff;
-    --color-ligth: rgba(255, 255, 255, 0.7);
-    --color-black: #000;
-    --color-bg: #1f2641;
-    --color-bg1: #2e3267;
-    --color-bg2: #424890;
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-ligth: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
 
-    --container-width-lg: 80%;
-    --container-width-md: 95%;
-    --container-width-sm: 98%;
+  --container-width-lg: 80%;
+  --container-width-md: 95%;
+  --container-width-sm: 98%;
 
-    --transition: all 400ms ease;
+  --transition: all 400ms ease;
 }
-body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    line-height: 1.7;
-    color: var(--color-white);
-    background: var(--color-bg);
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.7;
+  color: var(--color-white);
+  background: var(--color-bg);
 }
-.container{
-    width: var(--container-width-lg);
-    margin: auto;
-    padding: 1rem;
+.container {
+  width: var(--container-width-lg);
+  margin: auto;
+  padding: 1rem;
 }
-section{
-    padding: 6rem;
+section {
+  padding: 6rem;
 }
-section h2{
-    text-align: center;
-    margin-bottom: 4rem;
+section h2 {
+  text-align: center;
+  margin-bottom: 4rem;
 }
-h1, h2, h3, h4, h5{
-    line-height: 1.2;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
 }
-h1{
-    font-size: 2.4rem;
+h1 {
+  font-size: 2.4rem;
 }
-h2{
-    font-size: 2rem;
+h2 {
+  font-size: 2rem;
 }
-h3{
-    font-size: 1.6rem;
+h3 {
+  font-size: 1.6rem;
 }
-h4{
-    font-size: 1.3rem;
+h4 {
+  font-size: 1.3rem;
 }
-a{
-    color: var(--color-white);
+a {
+  color: var(--color-white);
 }
-img{
-    width: 100%;
-    display: block;
-    object-fit: cover;
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
-.btn{
-    display: inline-block;
-    background: var(--color-white);
-    color: var(--color-black);
-    padding: 1rem 2rem;
-    border: 1px solid transparent;
-    font-weight: 500;
-    transition: var(--transition);
+.btn {
+  display: inline-block;
+  background: var(--color-white);
+  color: var(--color-black);
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: var(--transition);
 }
-.btn:hover{
-    background: transparent;
-    color: var(--color-white);
-    border-color: var(--color-white);
+.btn:hover {
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
 }
-.btn-primary{
-    background: var(--color-danger);
-    color: var(--color-white);
+.btn-primary {
+  background: var(--color-danger);
+  color: var(--color-white);
 }
 /*========== NAVBAR Styles ============*/
-nav{
-    background: transparent;
-    width: 100vw;
-    height: 5rem;
-    position: fixed;
-    top: 0;
-    z-index: 11;
+nav {
+  background: transparent;
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
 }
 /*Change navbar on scroll using JavaScript*/
-.window-scroll{
-    background: var(--color-primary);
-    /*👇 👇👇0=>x side, 1rem=> y side 2rem for the blur. rgba=>0.5 50% of transparency 👇👇👇*/
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+.window-scroll {
+  background: var(--color-primary);
+  /*👇 👇👇0=>x side, 1rem=> y side 2rem for the blur. rgba=>0.5 50% of transparency 👇👇👇*/
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
-.nav__container{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav button{
-    display: none; /*To hide the buttons on large devises*/
+nav button {
+  display: none; /*To hide the buttons on large devises*/
 }
-.nav__menu{
-    display: flex;
-    align-items: center;
-    gap: 4rem;
+.nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
 }
-.nav__menu a{
-    font-size: 0.9rem;
-    transition: var(--transition);
+.nav__menu a {
+  font-size: 0.9rem;
+  transition: var(--transition);
 }
-.nav__menu a:hover{
-
-    color: var(--color-bg2);
+.nav__menu a:hover {
+  color: var(--color-bg2);
 }
 /*========== HEADER SECTION Styles ============*/
-header{
-    position: relative;
-    top: 5rem; /*to start after navbar*/
-    overflow: hidden;
-    height: 70vh;
-    margin-bottom: 5rem;
+header {
+  position: relative;
+  top: 5rem; /*to start after navbar*/
+  overflow: hidden;
+  height: 70vh;
+  margin-bottom: 5rem;
 }
-.header__container{
-    display: grid;
-    grid-template-columns: 1fr 1fr; /*To devide in 2 equal parts*/
-    align-items: center;
-    gap: 5rem;
-    height: 100%; /*To center the items in the height of the section*/
+.header__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /*To devide in 2 equal parts*/
+  align-items: center;
+  gap: 5rem;
+  height: 100%; /*To center the items in the height of the section*/
 }
-.header__left p{
-    margin: 1rem 0 2.4rem; /*1.2=>Top 0=>Left/right 2=>Bottom*/
+.header__left p {
+  margin: 1rem 0 2.4rem; /*1.2=>Top 0=>Left/right 2=>Bottom*/
 }
 /*========== CATEGORIES SECTION Styles ============*/
-.categories{
-    background: var(--color-bg1);
-    height: 32rem;
+.categories {
+  background: var(--color-bg1);
+  height: 32rem;
 }
-.categories h1{
-    line-height: 1;
-    margin-bottom: 3rem;
+.categories h1 {
+  line-height: 1;
+  margin-bottom: 3rem;
 }
-.categories__container{
-    display: grid;
-    grid-template-columns: 40% 60%; /*Divided in 2 blocks as shown in values percentage*/
+.categories__container {
+  display: grid;
+  grid-template-columns: 40% 60%; /*Divided in 2 blocks as shown in values percentage*/
 }
-.categories__left{
-    margin-right: 4rem;
+.categories__left {
+  margin-right: 4rem;
 }
-.categories__left p{
-    margin: 1rem 0 3rem;
+.categories__left p {
+  margin: 1rem 0 3rem;
 }
-.categories__right{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.2rem;
+.categories__right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
 }
-.category{
-    background: var(--color-bg2);
-    padding: 0.9rem;
-    border-radius: 2rem;
-    transition: var(--transition);
+.category {
+  background: var(--color-bg2);
+  padding: 0.9rem;
+  border-radius: 2rem;
+  transition: var(--transition);
 }
-.category:hover{
-    /*👇 👇👇0=>x side, 3rem=> y side 3rem for the blur. rgba=>0.5 30% of transparency 👇👇👇*/
-    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
-    z-index: 1;
+.category:hover {
+  /*👇 👇👇0=>x side, 3rem=> y side 3rem for the blur. rgba=>0.5 30% of transparency 👇👇👇*/
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
-.category:nth-child(2) .category__icon{
-    background: var(--color-danger);
+.category:nth-child(2) .category__icon {
+  background: var(--color-danger);
 }
-.category:nth-child(3) .category__icon{
-    background: var(--color-success);
+.category:nth-child(3) .category__icon {
+  background: var(--color-success);
 }
-.category:nth-child(4) .category__icon{
-    background: var(--color-warning);
+.category:nth-child(4) .category__icon {
+  background: var(--color-warning);
 }
-.category:nth-child(5) .category__icon{
-    background: var(--color-success);
+.category:nth-child(5) .category__icon {
+  background: var(--color-success);
 }
-.category__icon{
-    background: var(--color-primary);
-    padding: 0.7rem;
-    border-radius: 0.9rem;
+.category__icon {
+  background: var(--color-primary);
+  padding: 0.7rem;
+  border-radius: 0.9rem;
 }
-.category h5{
-    margin: 2rem 0 1rem; /*1.2=>Top 0=>Left/right 2=>Bottom*/
+.category h5 {
+  margin: 2rem 0 1rem; /*1.2=>Top 0=>Left/right 2=>Bottom*/
 }
-.category p{
-    font-size: 0.85rem;
+.category p {
+  font-size: 0.85rem;
 }
 /*========== COURSES SECTION Styles ============*/
-.courses{
-    margin-top: 10rem;
+.courses {
+  margin-top: 10rem;
 }
-.courses__container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+.courses__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
-.course{
-    background: var(--color-bg1);
-    text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transition);
+.course {
+  background: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
 }
-.course:hover{
-    background: transparent;
-    border-color: var(--color-primary);
+.course:hover {
+  background: transparent;
+  border-color: var(--color-primary);
 }
-.course__info{
-    padding: .9rem;
+.course__info {
+  padding: 0.9rem;
 }
-.course__info p{
-    margin: 1.2rem 0 2rem; /*1.2=>Top 0=>Left/right 2=>Bottom*/
-    font-size: 0.9rem;
+.course__info p {
+  margin: 1.2rem 0 2rem; /*1.2=>Top 0=>Left/right 2=>Bottom*/
+  font-size: 0.9rem;
 }
 /*========== FAQs SECTION Styles ============*/
-.faqs{
-    background: var(--color-bg1);
-    /*👇 👇👇0=>x side, 0=> y side 3rem for the blur. rgba=>0.5 50% of transparency 👇👇👇*/
-    box-shadow: insert 0 0 3rem rgba(0, 0, 0, 0.5);
+.faqs {
+  background: var(--color-bg1);
+  /*👇 👇👇0=>x side, 0=> y side 3rem for the blur. rgba=>0.5 50% of transparency 👇👇👇*/
+  box-shadow: insert 0 0 3rem rgba(0, 0, 0, 0.5);
 }
-.faqs__container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.faqs__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.faq{
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 1.4rem;
-    height: fit-content;
-    background: var(--color-primary);
-    cursor: pointer;
+.faq {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  height: fit-content;
+  background: var(--color-primary);
+  cursor: pointer;
 }
-.faq h4{
-    font-size: 1rem;
-    line-height: 2.3;
+.faq h4 {
+  font-size: 1rem;
+  line-height: 2.3;
 }
-.faq__icon{
-    align-self: flex-start; /*Align the icon in the begining of the box content*/
-    font-size: 1.2rem;
+.faq__icon {
+  align-self: flex-start; /*Align the icon in the begining of the box content*/
+  font-size: 1.2rem;
 }
-.faq p{
-    margin-top: 0.8rem;
-    display: none; /*To hide the answers*/
+.faq p {
+  margin-top: 0.8rem;
+  display: none; /*To hide the answers*/
 }
-.faq.open p{
-    display: block; /*injected by JavaSCript to show the answer*/
+.faq.open p {
+  display: block; /*injected by JavaSCript to show the answer*/
 }
 /*========== TESTIMONIAL SECTION Styles ============*/
-.testimonials__container{
-    overflow-y: hidden;
-    position: relative;
-    margin-bottom: 5rem;
+.testimonials__container {
+  overflow-y: hidden;
+  position: relative;
+  margin-bottom: 5rem;
 }
-.testimonial{
-    padding-top: 2rem;
+.testimonial {
+  padding-top: 2rem;
 }
-.avatar{
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 1rem;
-    border: 1rem solid var(--color-bg1);
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 1rem solid var(--color-bg1);
 }
-.testimonial__info{
-    text-align: center;
+.testimonial__info {
+  text-align: center;
 }
-.testimonial__body{
-    background: var(--color-primary);
-    padding: 2rem;
-    margin-top: 3rem;
-    position: relative;
+.testimonial__body {
+  background: var(--color-primary);
+  padding: 2rem;
+  margin-top: 3rem;
+  position: relative;
 }
-.testimonial__body::before{
-    /*👇 👇👇 content to create the piramid effect on top of the box 👇👇👇*/
-    content: "";
-    display: block;
-    background: linear-gradient(
-        135deg,
-        transparent,
-        var(--color-primary),
-        var(--color-primary),
-        var(--color-primary)
-    );
-    width: 3rem;
-    height: 3rem;
-    position: absolute;
-    left: 50%;
-    top: -1.5rem;
-    transform: rotate(45deg);
+.testimonial__body::before {
+  /*👇 👇👇 content to create the piramid effect on top of the box 👇👇👇*/
+  content: "";
+  display: block;
+  background: linear-gradient(
+    135deg,
+    transparent,
+    var(--color-primary),
+    var(--color-primary),
+    var(--color-primary)
+  );
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  top: -1.5rem;
+  transform: rotate(45deg);
 }
 /*========== FOOTER SECTION Styles ============*/
-footer{
-    background: var(--color-bg1);
-    padding: 5rem;
-    font-size: 0.5rem;
+footer {
+  background: var(--color-bg1);
+  padding: 5rem;
+  font-size: 0.5rem;
 }
-footer ul li{
-    margin-bottom: 0.7rem;
+footer ul li {
+  margin-bottom: 0.7rem;
 }
-footer ul li a:hover{
-    text-decoration: underline;
+footer ul li a:hover {
+  text-decoration: underline;
 }
-.footer__container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5rem;
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
 }
-.footer__1 p{
-    margin: 1rem 0 2rem;
+.footer__1 p {
+  margin: 1rem 0 2rem;
 }
-.footer__socials{
-    display: flex;
-    gap: 1.2rem;
-    margin-top: 2rem;
+.footer__socials {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2rem;
 }
-.footer__copyright{
-    text-align: center;
-    margin-top: 4rem;
-    padding: 1.2rem;
-    border-top: 1px solid var(--color-bg2);
+.footer__copyright {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.2rem;
+  border-top: 1px solid var(--color-bg2);
 }
 /*===================== MEDIA QUERIES (TABLETS) Styles ====================*/
-@media screen and (max-width: 1024px){
-    /*========== General Styles ============*/
-    .container{
-        width: var(--container-width-md)
-    }
+@media screen and (max-width: 1024px) {
+  /*========== General Styles ============*/
+  .container {
+    width: var(--container-width-md);
+  }
 
-    h1{
-        font-size: 2rem;
-    }
+  h1 {
+    font-size: 2rem;
+  }
 
-    h2{
-        font-size: 1.7rem;
-    }
+  h2 {
+    font-size: 1.7rem;
+  }
 
-    h3{
-        font-size: 1.4rem;
-    }
+  h3 {
+    font-size: 1.4rem;
+  }
 
-    h4{
-        font-size: 1.2rem;
-    }
+  h4 {
+    font-size: 1.2rem;
+  }
 
-    /*========== NAVBAR Styles ============*/
-    nav button {
-        display: inline-block;
-        background: transparent;
-        font-size: 1.8rem;
-        color: var(--color-white);
-        cursor: pointer;
-    }
+  /*========== NAVBAR Styles ============*/
+  nav button {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color: var(--color-white);
+    cursor: pointer;
+  }
 
-    nav button#close-menu-btn{
-        display: none; /*To hyde the close btn*/
-    }
+  nav button#close-menu-btn {
+    display: none; /*To hyde the close btn*/
+  }
 
-    .nav__menu{
-        position: fixed;
-        top: 5rem;
-        right: 5%;
-        height: fit-content;
-        width: 18rem;
-        flex-direction: column;
-        gap: 0;
-        display: none;
-    }
+  .nav__menu {
+    position: fixed;
+    top: 5rem;
+    right: 5%;
+    height: fit-content;
+    width: 18rem;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+  }
 
-    .nav__menu li{
-        width: 100%;
-        height: 5.8rem;
-        animation: animateNavItems 400ms linear forwards; /*Calling the animation bellow*/
-        transform-origin: top right; /*To start the animation from the side indicated*/
-    }
+  .nav__menu li {
+    width: 100%;
+    height: 5.8rem;
+    animation: animateNavItems 400ms linear forwards; /*Calling the animation bellow*/
+    transform-origin: top right; /*To start the animation from the side indicated*/
+  }
 
-    /*Creating animation delay of milisecondsfor list items*/
-    .nav__menu li:nth-child(1){
-        animation-delay: 200ms;
-    }
-    .nav__menu li:nth-child(2){
-        animation-delay: 400ms;
-    }
-    .nav__menu li:nth-child(3){
-        animation-delay: 600ms;
-    }
-    .nav__menu li:nth-child(4){
-        animation-delay: 800ms;
-    }
+  /*Creating animation delay of milisecondsfor list items*/
+  .nav__menu li:nth-child(1) {
+    animation-delay: 200ms;
+  }
+  .nav__menu li:nth-child(2) {
+    animation-delay: 400ms;
+  }
+  .nav__menu li:nth-child(3) {
+    animation-delay: 600ms;
+  }
+  .nav__menu li:nth-child(4) {
+    animation-delay: 800ms;
+  }
 
-    @keyframes animateNavItems {
-        /*Creating animations for navbar*/
-        0%{
-            transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
-        }
-        100%{
-            transform: rotateZ(0) rotateZ(0) scale(1);
-            opacity: 1;
-        }
+  @keyframes animateNavItems {
+    /*Creating animations for navbar*/
+    0% {
+      transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+    }
+    100% {
+      transform: rotateZ(0) rotateZ(0) scale(1);
+      opacity: 1;
+    }
+  }
 
-    }
-        
-    .nav__menu li a{
-        background: var(--color-primary);
-        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
-        width: 100%;
-        height: 100%;
-        display: grid;
-        place-items: center;
-    }
-    .nav__menu li a:hover{
-        background: var(--color-bg2);
-        color: var(--color-white);
-    }
+  .nav__menu li a {
+    background: var(--color-primary);
+    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .nav__menu li a:hover {
+    background: var(--color-bg2);
+    color: var(--color-white);
+  }
 
-    /*========== HEADER SECTION Styles ============*/
-    header{
-        height: 52vh;
-        margin-bottom: 4rem;
-    }
+  /*========== HEADER SECTION Styles ============*/
+  header {
+    height: 52vh;
+    margin-bottom: 4rem;
+  }
 
-    .header__container{
-        gap: 0;
-        padding-bottom: 3rem;
-    }
+  .header__container {
+    gap: 0;
+    padding-bottom: 3rem;
+  }
 
-    /*========== CATEGORIES SECTION Styles ============*/
-    .categories{
-        height: auto;
-    }
+  /*========== CATEGORIES SECTION Styles ============*/
+  .categories {
+    height: auto;
+  }
 
-    .categories__container{
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
+  .categories__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
 
-    .categories__left{
-        margin-right: 0;
-    }
+  .categories__left {
+    margin-right: 0;
+  }
 
-    /*========== POPULAR COURSES SECTION Styles ============*/
-    .courses{
-        margin-top: 0;
-    }
+  /*========== POPULAR COURSES SECTION Styles ============*/
+  .courses {
+    margin-top: 0;
+  }
 
-    .courses__container{
-        grid-template-columns: 1fr 1fr;
-    }
+  .courses__container {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    /*========== FAQs SECTION Styles ============*/
+  /*========== FAQs SECTION Styles ============*/
 
-    .faqs__container{
-        grid-template-columns: 1fr;
-    }
+  .faqs__container {
+    grid-template-columns: 1fr;
+  }
 
-    .faq{
-        padding: 1.5rem;
-    }
+  .faq {
+    padding: 1.5rem;
+  }
 
-    /*========== FOOTER SECTION Styles ============*/
-    .footer__container{
-        grid-template-columns: 1fr 1fr      ;
-    }
+  /*========== FOOTER SECTION Styles ============*/
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 /*========== MEDIA QUERIES (SMARTPHONES) Styles ============*/
 @media screen and (max-width: 720px) {
-    .container{
-        width: var(--container-width-sm);
-    }    
-    /*========== NAVBAR Styles ============*/
-    .nav__menu{
-        right: 3%;
-    }
-    /*========== HEADER SECTION Styles ============*/
-    header{
-        height: 100vh;
-    }
-    .header__container{
-        grid-template-columns: 1fr;
-        text-align: center;
-        margin-top: 0;
-    }
-    .header__left p{
-        margin-bottom: 1.3rem;
-    }
-    /*========== CATEGORIES SECTION Styles ============*/
-    .categories__right{
-        grid-template-columns: 1fr 1fr;
-        gap: 0.7rem;
-    }
-    .category{
-        padding: 1rem;
-        border-radius: 1rem;
-    }
-    .category__icon{
-        margin-top: 4px;
-        display: inline-block;
-    }
-    /*========== POPULAR COURSES SECTION Styles ============*/
-    .courses__container{
-        grid-template-columns: 1fr;
-    }
-    /*========== TESTIMONIAL SECTION Styles ============*/
-    .testimonial__body{
-        padding: 1.2rem;
-    }
-    /*========== FOOTER SECTION Styles ============*/
-    .footer__container{
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 2rem;
-    }
-    .footer__1 p{
-        margin: 1rem;
-    }
-    .footer__socials{
-        justify-content: center;
-    }
+  .container {
+    width: var(--container-width-sm);
+  }
+  /*========== NAVBAR Styles ============*/
+  .nav__menu {
+    right: 3%;
+  }
+  /*========== HEADER SECTION Styles ============*/
+  header {
+    height: 100vh;
+  }
+  .header__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 0;
+  }
+  .header__left p {
+    margin-bottom: 1.3rem;
+  }
+  /*========== CATEGORIES SECTION Styles ============*/
+  .categories__right {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+  .category {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .category__icon {
+    margin-top: 4px;
+    display: inline-block;
+  }
+  /*========== POPULAR COURSES SECTION Styles ============*/
+  .courses__container {
+    grid-template-columns: 1fr;
+  }
+  /*========== TESTIMONIAL SECTION Styles ============*/
+  .testimonial__body {
+    padding: 1.2rem;
+  }
+  /*========== FOOTER SECTION Styles ============*/
+  .footer__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  .footer__1 p {
+    margin: 1rem;
+  }
+  .footer__socials {
+    justify-content: center;
+  }
 }
